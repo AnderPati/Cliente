@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>CALCULADORA</h2>
+    <div id="calculadora" style="border: solid 1px; width: 300px; padding: 5px;">
+      <input type="text" name="pantalla" id="pantalla" readonly="readonly" style="width: 294px; text-align: right;"/>
+      <table style="width: 100%; margin-top: 5px">
+        <tr>
+          <td><button id="1" onclick="agregarNum('1')" style="width: 100%">1</button></td>
+          <td><button id="2" onclick="agregarNum('2')" style="width: 100%">2</button></td>
+          <td><button id="3" onclick="agregarNum('3')" style="width: 100%">3</button></td>
+          <td><button id="c" onclick="limpiar()"style="width: 100%">C</button></td>
+        </tr>
+        <tr>
+          <td><button id="4" onclick="agregarNum('4')" style="width: 100%">4</button></td>
+          <td><button id="5" onclick="agregarNum('5')" style="width: 100%">5</button></td>
+          <td><button id="6" onclick="agregarNum('6')" style="width: 100%">6</button></td>
+          <td><button id="+" onclick="agregarOperador('+')"style="width: 100%">+</button></td>
+        </tr>
+        <tr>
+          <td><button id="7" onclick="agregarNum('7')" style="width: 100%">7</button></td>
+          <td><button id="8" onclick="agregarNum('8')" style="width: 100%">8</button></td>
+          <td><button id="9" onclick="agregarNum('9')" style="width: 100%">9</button></td>
+          <td><button id="-" onclick="agregarOperador('-')"style="width: 100%">-</button></td>
+        </tr>
+        <tr>
+          <td><button id="0" onclick="agregarNum('0')" style="width: 100%">0</button></td>
+          <td><button id="/" onclick="agregarOperador('/')" style="width: 100%">/</button></td>
+          <td><button id="=" onclick="resultado()"style="width: 100%">=</button></td>
+          <td><button id="x" onclick="agregarOperador('*')" style="width: 100%">*</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script/app.js"></script>
+  </body>
+</html>
